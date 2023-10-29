@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Castoro Titling', serif; */
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav{
+    width: 80%;
+    height: 50px;
+    /* border: 2px solid white; */
+    margin: 0 auto;
+}
+.buttons{
+
+    display: flex;
+    position: absolute;
+    right: 130px;
+    margin: 30px;
+}
+.list ul{
+    color: white;
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+.nav button{
+    border: 2px solid wheat;
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+    margin: 0 10px 0 10px;
+    background-color: gray;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.main_box{
+    height: 100vh;
+    background: url(photo.jpg);
+    background-size: cover;
+}
+.sidebar_menu{
+    width: 225px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px white;
+    position: fixed;
+    left: -300px;
+    transition: 0.2s linear;
+    top: 70px;
+}
+.menu{
+    position: absolute;
+    left: 22px;
+    margin-top: 60px;
+    width: 90%;
+}
+.menu ul li i,a{
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 1.3rem;
+    margin-right: 15px;
+    color: gray;
+}
+.sidebar_menu .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    left: 20px;
+    text-shadow: 0 0 2px rgb(12, 199, 241);
+}
+.social_media ul{
+    position: absolute;
+    bottom: 55px;
+    left: 25px;
+}
+.btn_two i{
+    position: absolute;
+    left: 205px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.btn_one i{
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+}
+#check{
+    display: none;
+}
+#check:checked ~ .sidebar_menu{
+    left: 0;
+}
+#check:checked ~ .btn_one{
+    display: none;
+}
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+.social_media a:hover{
+    font-size: 30px;
+    color: white;
+    transition: 0.2s linear;
+}
+.btn_two i:hover{
+    font-size: 30px;
+    color: red;
+}
+.btn_one i:hover{
+    font-size: 30px;
+}
+
